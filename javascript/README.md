@@ -18,14 +18,32 @@ A browser-based voice assistant demonstrating Azure Voice Live SDK integration i
 - Audio level visualization
 - Support for OpenAI and Azure Neural voices
 
+### [Voice Live Avatar](./voice-live-avatar/)
+
+A Dockerized sample demonstrating Azure Voice Live API with avatar integration, enabling visual avatar representation during voice conversations.
+
+**Key Features:**
+- Avatar-enabled voice conversations
+- Prebuilt and custom avatar character support
+- Photo avatar option
+- Docker-based deployment
+- Azure Container Apps deployment guide
+- Developer mode for debugging
+
 ## Prerequisites
 
 All samples require:
 
-- [Node.js 18+](https://nodejs.org/) with npm
-- Modern browser (Chrome 66+, Firefox 60+, Safari 11.1+, Edge 79+)
 - [Azure subscription](https://azure.microsoft.com/free/) - Create one for free
 - [AI Foundry resource](https://learn.microsoft.com/azure/ai-services/multi-service-resource) with Voice Live enabled
+- Modern browser (Chrome 66+, Firefox 60+, Safari 11.1+, Edge 79+)
+
+**Sample-specific requirements:**
+
+| Sample | Requirements |
+|--------|--------------|
+| Basic Web Voice Assistant | [Node.js 18+](https://nodejs.org/) with npm |
+| Voice Live Avatar | [Docker](https://www.docker.com/get-started) |
 
 ## Getting Started
 
