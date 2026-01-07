@@ -26,7 +26,7 @@ export class AudioHandler {
   private circleElement: HTMLElement | null = null;
 
   private analysisNode: AnalyserNode | null = null;
-  private dataArray: Uint8Array | null = null;
+  private dataArray: Uint8Array<ArrayBuffer> | null = null;
 
   private recordAnimationFrameId: number | null = null;
   private playChunkAnimationFrameId: number | null = null;
@@ -41,7 +41,7 @@ export class AudioHandler {
     this.analysisNode = this.context.createAnalyser();
     this.analysisNode.fftSize = 2048;
     this.analysisNode.smoothingTimeConstant = 0.85;
-    this.dataArray = new Uint8Array(this.analysisNode.frequencyBinCount);
+    this.dataArray = new Uint8Array(new ArrayBuffer(this.analysisNode.frequencyBinCount));
   }
 
   getSampleRate(): number {
